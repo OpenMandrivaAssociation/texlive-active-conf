@@ -3,7 +3,7 @@ Version:	0.3a
 Release:	1
 Summary:	Class for typesetting ACTIVE conference papers
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive//macros/latex/contrib/conferences/active-conf
+URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/conferences/active-conf
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/active-conf.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/active-conf.doc.tar.xz
@@ -30,11 +30,13 @@ file.
     %_texmf_mktexlsr_post
 
 %preun
-    %_texmf_mktexlsr_preun
+    if [ $1 -eq 0 ]; then
+	%_texmf_mktexlsr_pre
+    fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mltexlsr_post
+	%_texmf_mktexlsr_post
     fi
 
 #-----------------------------------------------------------------------
