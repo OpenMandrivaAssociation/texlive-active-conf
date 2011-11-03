@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/conferences/active-conf
+# catalog-date 2008-05-24 14:41:17 +0200
+# catalog-license lppl
+# catalog-version 0.3a
 Name:		texlive-active-conf
 Version:	0.3a
 Release:	1
@@ -51,6 +57,7 @@ file.
 #- source
 %doc %{_texmfdistdir}/source/latex/active-conf/active-conf.dtx
 %doc %{_texmfdistdir}/source/latex/active-conf/active-conf.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -61,3 +68,5 @@ file.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
