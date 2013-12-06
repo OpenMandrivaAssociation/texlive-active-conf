@@ -6,7 +6,7 @@
 # catalog-version 0.3a
 Name:		texlive-active-conf
 Version:	0.3a
-Release:	2
+Release:	3
 Summary:	Class for typesetting ACTIVE conference papers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/conferences/active-conf
