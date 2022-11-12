@@ -5,9 +5,9 @@ Summary:	Class for typesetting ACTIVE conference papers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/conferences/active-conf
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/active-conf.r15878.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/active-conf.doc.r15878.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/active-conf.source.r15878.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/active-conf.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/active-conf.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/active-conf.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
