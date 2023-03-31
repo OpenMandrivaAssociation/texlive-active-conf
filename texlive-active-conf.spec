@@ -1,6 +1,6 @@
 Name:		texlive-active-conf
 Version:	15878
-Release:	1
+Release:	2
 Summary:	Class for typesetting ACTIVE conference papers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/conferences/active-conf
